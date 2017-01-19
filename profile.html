@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--
+        Dizzified Index Template Layout for Code Authority Projects
+        This template is intended as a demo example for the Dizzified 12-grid layout framework for Code Authority
+        and as a launching point for the Code Authority Project Websites.
+    -->
+    <meta charset="utf-8"/>
+    <title>Title</title>
+    <link type="text/css" href="css/style.css" rel="stylesheet"/>
+
+</head>
+<body>
+
+<div id="crowd-bg"></div>
+
+<header class="row">
+    <div id="navbar" class="static-nav col-12">
+        <div class="width-container">
+            <div id="logo">
+                <a href="index.html" title="CommonEdits.com"><img src="img/logo.png"/></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Showcase</a></li>
+                    <li class="active"><a href="#">Listen</a></li>
+                    <li><a href="#">Remix</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" name="query" placeholder="Search for songs or artists...">
+                <button class="search-btn" type="button"></button>
+            </div>
+            <div id="user-button" class="dropdown">
+                <img id="user-pic" src="img/user-pic.png"/>
+                <img class="dropdown-arrow" src="img/arrow.png"/>
+                <div class="dropdown-pane">
+                    <ul>
+                        <li>Account</li>
+                        <li>Settings</li>
+                        <li>Profile</li>
+                        <li>Log Out</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="profile" class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+        <div class="row">
+			<img class="user-pic col-2" src="img/artist_image.png" />
+			<div class="info col-7">
+                <!-- ARTIST NAME -->
+				<h1 id="page-title">DJ Snoop</h1>
+                
+                <!-- SONG DESCRIPTION -->
+				<p id="track-data1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dignissim quam ut justo hendrerit ultricies. Vivamus iaculis nisl sodales sem sagittis, vel commodo risus fringilla.</p> 
+				<p class="track-data">Nam viverra faucibus risus, vel luctus nisl vestibulum quis. Duis et nibh sagittis, dictum metus a, viverra lorem. Pellentesque metus mi, sagittis volutpat imperdiet id, lacinia at ipsum. Proin eleifend ante auctor, fermentum erat varius, ornare lorem. Pellentesque sem arcu, efficitur ut bibendum blandit, luctus blandit nisl. Ut molestie felis congue dui gravida rhoncus non quis arcu. Vestibulum mattis lacus non congue lobortis. Sed in mi euismod, facilisis dolor pretium, laoreet nunc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+				<p class="track-data">In hac habitasse platea dictumst. Cras vel egestas massa, quis rhoncus lacus.</p>
+			</div>
+            <nav id="playlist-tab" class="col-12">
+                <a id="tracks" class="active" href="#">Tracks</a>
+                <a id="remixed-by" href="#">Remixed By</a>
+                <a id="favorites" href="#">Favorites</a>
+            </nav>
+        </div>
+
+        <div id="tracks-pane" class="row">
+            <!-- TRACK -->
+            <div class="player-track">
+                <div class="artist-icon">
+                    <img class="artist-icon" src="img/artist_image.png">
+                </div>
+                <div class="track-details-container">
+                    <div class="track-details">
+                        <a href="#" title="Play video" class="play"></a>
+                        <div class="track-details-info">
+                            <div class="track-title">
+                                <p>Harp Beat</p>
+                            </div>
+                            <div class="artist-name">
+                                <a href="#">DJ Snoop</a>
+                            </div>
+                        </div>
+                        <div class="track-icons">
+ 
+                            <div class="track-fav">
+                                <img src="img/unselected_heart_icon.png">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="track-pos">
+                        <!-- data-length is song length in seconds -->
+                        <div class="track-pos-graph" data-length="345" data-mask="img/progressed_timeline_mask.png">
+                        </div>
+                        <div class="track-pos-details">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- TRACK -->
+            <div class="player-track">
+                <div class="artist-icon">
+                    <img class="artist-icon" src="img/artist_image.png">
+                </div>
+                <div class="track-details-container">
+                    <div class="track-details">
+                        <a href="#" title="Play video" class="play"></a>
+                        <div class="track-details-info">
+                            <div class="track-title">
+                                <p>Harp Beat</p>
+                            </div>
+                            <div class="artist-name">
+                                <a href="#">DJ Snoop</a>
+                            </div>
+                        </div>
+                        <div class="track-icons">
+     
+                            <div class="track-fav">
+                                <img src="img/unselected_heart_icon.png">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="track-pos">                        
+                        <!-- data-length is song length in seconds -->
+                        <div class="track-pos-graph" data-length="345" data-mask="img/progressed_timeline_mask.png">
+                        </div>
+                        <div class="track-pos-details">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="col-1"></div>
+</section>
+
+<!--<footer class="row">
+
+</footer>-->
+
+<script src="js/vendor/jquery-3.0.0.min.js"></script>
+<script src="js/vendor/jquery-ui.slider.min.js"></script>
+<script src="js/site.js"></script>
+
+</body>
+</html>
